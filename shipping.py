@@ -1,5 +1,6 @@
 weight = 8.4
 cost_ground = ""
+cost_drone_shipping = ""
 #ground shipping
 if weight <= 2:
   cost_ground = 1.50 * weight + 20

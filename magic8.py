@@ -1,7 +1,9 @@
 import random
 
-name = "Jason"
-question = "Should I work 14 hours tomorrow?"
+
+name = input("What is your name? ")
+question = input("What question would you like to ask the Magic 8-Ball? ")
+
 answer = ""
 
 random_number = random.randint(1, 9)
