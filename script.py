@@ -46,3 +46,14 @@ def divisible_by_ten(nums):
   return count
 
 print(divisible_by_ten([20, 25, 30, 35, 40]))
+
+
+#function to automate a hello to guest names
+def add_greetings(names):
+  new_list = []
+  for name in names:
+    new_list.append("Hello, " + name)
+  return new_list
+
+
+print(add_greetings(["Owen", "Max", "Sophie"]))
