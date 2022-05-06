@@ -1,3 +1,4 @@
+#function to generate an account
 first_name = "Julie"
 last_name = "Blevins"
 def account_generator(first_name, last_name):
@@ -12,10 +13,14 @@ print(second_to_last)
 final_word = company_motto[-4:]
 print(final_word)
 
+
+
 #fixing Bob to Rob
 first_name = "Bob"
 last_name = "Daily"
 fixed_first_name = "R" + first_name[-2:]
+
+
 
 #creating a username and password generator
 def username_generator(first_name, last_name):
@@ -57,3 +62,38 @@ def add_greetings(names):
 
 
 print(add_greetings(["Owen", "Max", "Sophie"]))
+
+
+#delete starting list of evens until reaching an odd
+def delete_starting_evens(lst):
+  while (len(lst) > 0 and lst[0] % 2 == 0):
+    lst = lst[1:]
+  return lst
+
+print(delete_starting_evens([4, 8, 10, 11, 12, 15]))
+print(delete_starting_evens([4, 8, 10]))
+
+
+#return odd index only
+
+def odd_indices(lst):
+  new_lst = []
+  for index in range(1, len(lst), 2):
+    new_lst.append(lst[index])
+  return new_lst
+
+print(odd_indices([4, 3, 7, 10, 11, -2]))
+
+
+#exponents
+#every number in first list will be raised to the power of every number in the second list
+
+def exponents(bases, powers):
+  new_lst = []
+  for base in bases:
+    for power in powers:
+      new_lst.append(base ** power)
+  return new_lst
+
+
+print(exponents([2, 3, 4], [1, 2, 3]))
