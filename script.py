@@ -131,3 +131,8 @@ Nathan Pinchback Tomer, who adopted the name Jean Tomer early in his literary ca
 """
 toomer_bio_fixed = toomer_bio.replace("Tomer", "Toomer")
 print(toomer_bio_fixed)
+
+
+#find function
+find_test = "This is a test phrase to find the word/'s index"
+print(find_test.find('phrase'))
