@@ -110,3 +110,15 @@ for name in author_names:
   author_last_names.append(name.split()[-1])
   
 print(author_last_names)
+
+
+#using strip function to clean up whitespace
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+love_maybe_lines_stripped = []
+
+for line in love_maybe_lines:
+  love_maybe_lines_stripped.append(line.strip())
+  
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+
+print(love_maybe_full)
